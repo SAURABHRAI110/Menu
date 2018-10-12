@@ -1,0 +1,91 @@
+
+@font-face{
+    src: url("Font/CircularStd-Medium.otf");
+    font-family: Saurabh;
+}
+body{
+    margin: 0;
+    font-family: Saurabh; 
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+.child1{
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    width: 25%;
+}
+.child2{
+    background:#0E2431;
+    height: 100vh;
+    width: 28%;
+    position: relative;
+}
+.child3{
+    background: #FC3A52;
+    height: 100vh;
+    width: 24%;
+    position: relative;
+}
+.child4{
+    background: rgb(117, 117, 253);
+    height: 100vh;
+    width: 23%;
+    position: relative;
+}
+.child41{
+    background:#F6ECDD;
+    height: 50vh;
+    width: 100
+}
+.child42{
+    background: #372154;
+    height: 50vh;
+    width: 100;
+}
+.text2{
+    font-size: 90px;
+    color: white;
+    transform: rotate(-90deg);
+    position: absolute;
+    transform-origin: top left;
+    bottom: 0;
+    left: 50%;
+    left: 10%;
+    text-align: center;
+    margin-bottom: -65px;
+}
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+.text3{
+    font-size: 30px;    
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.childheading2{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+ul{
+    list-style-type: none;
+    margin-top: 50vh;
+}
+li{
+    margin: 20px;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+li:hover{
+    text-decoration-line: line-through;
+
+}
