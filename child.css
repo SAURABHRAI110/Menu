@@ -1,106 +1,128 @@
+body, html{
+    margin: 0%;
 
-@font-face{
-    src: url("Font/CircularStd-Medium.otf");
-    font-family: Saurabh;
 }
-body{
-    margin: 0;
-    font-family: Saurabh; 
-}
-.container{
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+
+.header{
     width: 100%;
+    height: 100px;
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0%;
+    z-index: 3;
 }
-.child1{
-    background: rgb(255, 255, 255);
-    height: 100vh;
-    width: 23%;
-}
-.child2{
-    background:#0E2431;
-    height: 100vh;
-    width: 26%;
-    position: relative;
-}
-.child3{
-    background: #FC3A52;
-    height: 100vh;
-    width: 26%;
-    position: relative;
-}
-.child4{
-    background: rgb(117, 117, 253);
-    height: 100vh;
-    width: 29%;
-    position: relative;
-}
-.child41{
-    background:#F6ECDD;
-    height: 50vh;
-    width: 100
-}
-.child42{
-    background: #372154;
-    height: 50vh;
-    width: 100;
-}
-.text2{
-    font-size: 90px;
+
+.logo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
     color: white;
-    transform: rotate(-90deg);
-    position: absolute;
-    transform-origin: top left;
-    bottom: 0;
-    left: 50%;
-    left: 10%;
-    text-align: center;
-    margin-bottom: -65px;
+    margin: 28px 0 0 73px;
 }
-.white{
-    color: white;
-}
-.black{
-    color: black;
-}
-.text3{
-    font-size: 30px;    
-}
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.childheading2{
-    margin-left: 50px;
-    margin-top: 50px;
-}
-ul{
-    list-style-type: none;
-    margin-top: 40vh;
-}
-li{
-    margin: 20px;
+
+.header-right{
+    float:right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    transition: all 0.3s;
-}
-li:hover{
-    text-decoration-line: line-through;
+    color: white;
+    margin: -31px 89px 0 0;
 
 }
-.logo{
-    width:143px;
-    margin-left: 50px;
-    margin-top: 30px;
+.header-right a{
+    text-decoration: none;
+    font-size:30px;
+    color: white;
+    margin: 10px;
 }
-.social{
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-top: 100px;
+
+
+.container {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
 }
-i{
-    padding: 10px;
-    height: 8px;
-    width:8px;
+
+.container > div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 200ms ease-in-out; 
 }
+
+.container div:hover{
+transform: scale(.90);
+
+}
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical{
+    grid-row: span 2;
+}
+
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.container > div{
+    
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+    justify-content: center;
+    display: flex;
+
+}
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textclip{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 190px;
+    font-weight: bold;
+    line-height: .8;
+    text-align: center;
+    color: rgb(117, 49, 49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image:url(photos/29.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 200px;
+
+}
+p{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 56px;
+
+}
+
+
+
+.container > div:nth-child(1n) {
+    background-color: #96ceb4;
+}
+.container > div:nth-child(3n) {
+    background-color: #88d8b0;
+}
+.container > div:nth-child(2n) {
+    background-color: #ff6f69;
+}
+.container > div:nth-child(4n) {
+    background-color: #ffcc5c;
+}
+*/
