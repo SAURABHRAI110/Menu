@@ -1,77 +1,52 @@
-@font-face {
+
+@font-face{
     src: url("Font/CircularStd-Medium.otf");
     font-family: Saurabh;
 }
-
-body {
+body{
     margin: 0;
-    font-family: Saurabh;
+    font-family: Saurabh; 
 }
-
-.container {
+.container{
     display: flex;
     flex-direction: row;
     height: 100vh;
     width: 100%;
 }
-
-.child1 {
+.child1{
     background: rgb(255, 255, 255);
     height: 100vh;
     width: 23%;
 }
-
-.child2 {
-    background: #0E2431;
+.child2{
+    background:#0E2431;
     height: 100vh;
     width: 26%;
     position: relative;
-
 }
-
-div.child2:hover,
-div.child3:hover {
-    width: 40%;
-    transition: width 1s ease-in-out;
-    -webkit-transition: width .5s;
-
-
-}
-
-.child3 {
+.child3{
     background: #FC3A52;
     height: 100vh;
     width: 26%;
     position: relative;
 }
-
-.child4 {
+.child4{
     background: rgb(117, 117, 253);
     height: 100vh;
     width: 29%;
     position: relative;
 }
-
-.child41 {
-    background: #F6ECDD;
+.child41{
+    background:#F6ECDD;
     height: 50vh;
-    width: 100%;
+    width: 100
 }
-
-
-
-.child42 {
+.child42{
     background: #372154;
     height: 50vh;
-    width: 100%;
+    width: 100;
 }
-
-div.child41:hover {
-    width: 120%;
-    transition: width .5s ease-in-out;
-}
-
-.text2 {
+.text2{
     font-size: 90px;
     color: white;
     transform: rotate(-90deg);
@@ -83,60 +58,49 @@ div.child41:hover {
     text-align: center;
     margin-bottom: -65px;
 }
-
-.white {
+.white{
     color: white;
 }
-
-.black {
+.black{
     color: black;
 }
-
-.text3 {
-    font-size: 30px;
+.text3{
+    font-size: 30px;    
 }
-
-.center {
+.center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.childheading2 {
+.childheading2{
     margin-left: 50px;
     margin-top: 50px;
 }
-
-ul {
+ul{
     list-style-type: none;
     margin-top: 40vh;
 }
-
-li {
+li{
     margin: 20px;
     font-size: 20px;
     transition: all 0.3s;
 }
-
-li:hover {
+li:hover{
     text-decoration-line: line-through;
 
 }
-
-.logo {
-    width: 140px;
+.logo{
+    width:143px;
     margin-left: 50px;
     margin-top: 30px;
 }
-
-.social {
+.social{
     margin-bottom: 50px;
     margin-left: 50px;
     margin-top: 100px;
 }
-
-i {
+i{
     padding: 10px;
     height: 8px;
-    width: 8px;
+    width:8px;
 }
